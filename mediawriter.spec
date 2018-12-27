@@ -1,17 +1,17 @@
 Name:           mediawriter
 Version:        4.1.2
-Release:        1%{?dist}
+Release:        1
 Summary:        Fedora Media Writer
 
 License:        GPLv2+
 URL:            https://github.com/FedoraQt/MediaWriter
-Source0:        https://github.com/FedoraQt/MediaWriter/archive/%{version}.tar.gz
+Source0:        https://github.com/FedoraQt/MediaWriter/archive/%{version}/%{name}-%{version}.tar.gz
 
 Provides:       liveusb-creator = %{version}-%{release}
 Obsoletes:      liveusb-creator <= 3.95.4-2
 
 BuildRequires:  qt5-qtbase-devel
-BuildRequires:  qt5-qtdeclarative-devel
+BuildRequires:  qt5-qtdeclarative
 BuildRequires:  gettext
 BuildRequires:  libappstream-glib
 BuildRequires:  gcc-c++
@@ -21,11 +21,9 @@ Requires:       qt5-qtbase
 Requires:       qt5-qtquickcontrols >= 5.3.0
 Requires:       polkit
 Requires:       xz-libs
-%if 0%{?fedora} && 0%{?fedora} != 25
-Requires: storaged
-%else
+#Requires: storaged
 Requires: udisks
-%endif
+
 
 
 %description
