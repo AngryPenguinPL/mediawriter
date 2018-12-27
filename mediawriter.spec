@@ -21,10 +21,10 @@ BuildRequires:  pkgconfig(liblzma)
 BuildRequires:  pkgconfig(Qt5Qml)
 BuildRequires:  pkgconfig(Qt5Quick)
 
-Requires:       qt5-qtbase
+#Requires:       qt5-qtbase
 Requires:       qt5-qtquickcontrols >= 5.3.0
 Requires:       polkit
-Requires:       xz-libs
+Requires:       xz
 #Requires: storaged
 Requires: udisks
 
