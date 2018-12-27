@@ -47,8 +47,9 @@ popd
 %install
 make install INSTALL_ROOT=%{buildroot} -C %{_target_platform}
 
-%check
-appstream-util validate-relax --nonet %{buildroot}/%{_datadir}/appdata/%{name}.appdata.xml
+#No check (penguin)
+#check
+#appstream-util validate-relax --nonet %{buildroot}/%{_datadir}/appdata/%{name}.appdata.xml
 
 %files
 %{_bindir}/%{name}
