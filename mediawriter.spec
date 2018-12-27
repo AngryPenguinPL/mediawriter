@@ -18,6 +18,8 @@ BuildRequires:  gettext
 BuildRequires:  pkgconfig(appstream-glib)
 BuildRequires:  gcc-c++
 BuildRequires:  pkgconfig(liblzma)
+BuildRequires:  pkgconfig(Qt5Qml)
+BuildRequires:  pkgconfig(Qt5Quick)
 
 Requires:       qt5-qtbase
 Requires:       qt5-qtquickcontrols >= 5.3.0
