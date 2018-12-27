@@ -15,9 +15,9 @@ Obsoletes:      liveusb-creator <= 3.95.4-2
 BuildRequires:  qt5-qtbase-devel
 BuildRequires:  qt5-qtdeclarative
 BuildRequires:  gettext
-BuildRequires:  libappstream-glib
+BuildRequires:  pkgconfig(appstream-glib)
 BuildRequires:  gcc-c++
-BuildRequires:  xz-devel
+BuildRequires:  pkgconfig(liblzma)
 
 Requires:       qt5-qtbase
 Requires:       qt5-qtquickcontrols >= 5.3.0
