@@ -1,3 +1,5 @@
+%define oname MediaWriter
+
 Name:           mediawriter
 Version:        4.1.2
 Release:        1
@@ -31,7 +33,7 @@ A tool to write images of Fedora media to portable drives
 like flash drives or memory cards.
 
 %prep
-%autosetup -p1 -n MediaWriter-%{version}
+%setup -q -n %{oname}-%{version}
 mkdir %{_target_platform}
 
 %build
